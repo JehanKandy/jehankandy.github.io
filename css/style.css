@@ -1,0 +1,589 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto&family=Signika+Negative:wght@500&display=swap');
+
+/*
+
+font-family: 'Anton', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Signika Negative', sans-serif;
+
+*/
+
+*{
+    margin: 0;
+}
+.nav-content{
+    background-color: rgb(14, 11, 20);
+    height: 80px;
+    color: white;
+    width: 100%;
+}
+.left-side{
+    width: 125px;
+    padding-top: 30px;
+}
+.left-side .title{    
+    border: 1px solid white;
+    padding: 5px 20px 5px 20px;
+    margin-top: -5px;
+    border-radius: 2px;
+    box-shadow: 5px 5px 30px purple;
+}
+.right-side{
+    width: 125px;
+    margin-left: 100%;
+    margin-top: -35px;
+}
+.right-side .title{
+    font-size: 20px;
+}
+main{
+    background-color: rgb(14, 11, 20);
+    border-top: 1px solid purple;
+    padding: 100px 0;
+    color: white;
+    font-family: 'Roboto', sans-serif;   
+    text-align: center; 
+}
+.sec1 .title{
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 2px 2px 12px rgb(37, 204, 112);
+}
+.main-img{
+    margin-top: 50px;
+    border-radius: 20px;
+    border: 2px solid white;
+}
+.name{
+    margin-top: 20px;
+    font-size: 40px;
+}
+.follow{
+    margin: 20px 0;
+}
+.follow-item-git, .follow-item-linked, .follow-item-tw, .follow-item-stack{
+    font-size: 40px;
+    margin: 0 20px 0 20px;
+    transition: 0.5s;
+}
+.follow-item-git:hover, .follow-item-linked:hover, .follow-item-tw:hover, .follow-item-stack:hover{
+    cursor: pointer;
+    color: white;
+}
+.follow-item-git{
+    color: rgb(221, 20, 221);
+    text-shadow: 2px 2px 8px purple;
+}
+.follow-item-linked{
+    color: rgb(37, 204, 112);
+    text-shadow: 2px 2px 8px rgb(37, 204, 112);
+}
+.follow-item-tw{
+    color: orange;
+    text-shadow: 2px 2px 8px orange;
+}
+.follow-item-stack{
+    color: rgb(15, 64, 197);
+    text-shadow: 2px 2px 8px rgb(15, 64, 197);
+}
+.green-hr{
+    margin-top: 50px;
+    border-top: 2px solid rgb(37, 204, 112);
+    box-shadow: 5px 5px 30px rgb(37, 204, 112);
+}
+.info{
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 200px;
+}
+.infor-school, .infor-campus, .infor-degree, .infor-birth{
+    margin: 10px;
+    font-size: 20px;
+}
+.school{
+    color: rgb(37, 204, 112);
+    transition: 0.5s;
+}
+.campus{
+    color: orange;
+    transition: 0.5s;
+}
+.degree{
+    color: rgb(221, 20, 221);
+    transition: 0.5s;
+}
+.age{
+    color: rgb(15, 64, 197);
+    transition: 0.5s;
+}
+.school:hover{
+    color: rgb(221, 20, 221);
+    cursor: pointer;
+    font-size: 22px;
+}
+.campus:hover{
+    color: rgb(15, 64, 197);
+    cursor: pointer;
+    font-size: 22px;
+}
+.degree:hover{
+    color: rgb(37, 204, 112);
+    cursor: pointer;
+    font-size: 22px;
+}
+.age:hover{
+    color: orange;
+    cursor: pointer;
+    font-size: 22px;
+}
+.sec2 .title{
+    padding: 15px 0;
+}
+.sec2 .title .part1{
+    font-size: 15px;
+    text-shadow: none;
+}
+.sec2 .title .part2{
+    font-size: 35px;
+    text-transform: uppercase;
+}
+.purple-hr{
+    margin-top: 100px;    
+    border-top: 2px solid rgb(221, 20, 221);
+    box-shadow: 5px 5px 30px rgb(221, 20, 221);
+}
+.grid-skills{
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(500px, auto);
+    grid-gap: 3rem;
+    grid-template-areas: "a b";
+    padding: 45 45 45 45;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.frant-end{
+    grid-area: a;
+    border: 2px solid white;
+    border-radius: 8px;
+    box-shadow: 5px 5px 20px rgb(221, 20, 221);
+}
+.back-end{
+    grid-area: b;
+    border: 2px solid white;
+    border-radius: 8px;
+    box-shadow: 5px 5px 20px rgb(0, 255, 106);
+}
+.frant-end .title, .back-end .title{
+    text-shadow: none;
+}
+.frant-end .title{
+    color: orange;
+}
+.back-end .title{
+    color: purple;
+}
+.frant-end .body, .back-end .body{
+    text-align: left;
+    padding: 20px 0 20px 50px;
+}
+.skill-name{
+    font-size: 25px;
+    transition: 0.5s;
+    margin: 5px 0;
+}
+.skill-can{
+    color: orange;
+    margin-bottom: 20px;
+}
+.skill-name:hover{
+    font-size: 30px;
+    cursor: pointer;
+}
+.orange-hr{
+    margin-top: 50px;
+    border-top: 2px solid orange;
+    box-shadow: 5px 5px 30px orange;
+}
+.sec3 .title{
+    margin-top: 40px;
+}
+.sec3 .title .part1{
+    font-size: 15px;
+    text-shadow: none;
+}
+.sec3 .title .part2{
+    text-transform: uppercase;
+    font-size: 35px;
+}
+.project-grid{
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(400px, auto);
+    grid-gap: 3rem;
+    grid-template-areas: "a b c" "d e f" "g h i";
+    padding: 45 45 45 45;
+    margin-top: 120px;
+    margin-bottom: 5px;    
+}
+.pitem1{
+    grid-area: a;
+}
+.pitem2{
+    grid-area: b;
+}
+.pitem3{
+    grid-area: c;
+}
+.pitem4{
+    grid-area: d;
+}
+.pitem5{
+    grid-area: e;
+}
+.pitem6{
+    grid-area: f;
+}
+.pitem7{
+    grid-area: g;
+}
+.pitem8{
+    grid-area: h;
+}
+.pitem9{
+    grid-area: i;
+}
+
+
+.pitem1 .title .part1,
+.pitem2 .title .part1,
+.pitem3 .title .part1,
+.pitem4 .title .part1,
+.pitem5 .title .part1,
+.pitem6 .title .part1,
+.pitem7 .title .part1,
+.pitem8 .title .part1,
+.pitem9 .title .part1
+{
+    font-size: 15px;
+    text-shadow: none;
+}
+.pitem1 .title .part2,
+.pitem2 .title .part2,
+.pitem3 .title .part2,
+.pitem4 .title .part2,
+.pitem5 .title .part2,
+.pitem6 .title .part2,
+.pitem7 .title .part2,
+.pitem8 .title .part2,
+.pitem9 .title .part2{
+    font-size: 25px;
+    color: orange;
+    text-shadow: none;
+    text-transform:capitalize;
+}
+.pitem1, .pitem2, .pitem3, .pitem4, .pitem5, .pitem6, .pitem7, .pitem8, .pitem9{
+    border-radius: 5px;
+}
+
+.pitem1, .pitem5, .pitem9{
+    border: 2px solid rgb(0, 255, 106);
+    padding-top: 40px;
+    box-shadow: 5px 5px 20px rgb(0, 255, 106);    
+}
+.pitem3, .pitem7{
+    border: 2px solid rgb(221, 20, 221);
+    padding-top: 40px;
+    box-shadow: 5px 5px 20px rgb(221, 20, 221);
+}
+.pitem2, .pitem8{
+    border: 2px solid rgb(15, 64, 197);
+    padding-top: 40px;
+    box-shadow: 5px 5px 20px rgb(15, 64, 197);
+}
+.pitem4, .pitem6{
+    border: 2px solid orange;
+    padding-top: 40px;
+    box-shadow: 5px 5px 20px orange;
+}
+.project-btn{
+    padding: 10px 20px;
+    margin-top: 30px;
+    background-color: transparent;
+    border-radius: 5px;    
+    border: 1px solid white;
+    color: white;
+    transition: 0.5s;
+}
+.pitem1 .project-btn:hover{
+    box-shadow: 5px 5px 20px rgb(0, 255, 106);    
+    cursor: pointer;
+}
+.pitem5 .project-btn:hover{
+    box-shadow: 5px 5px 20px rgb(0, 255, 106);    
+    cursor: pointer;
+}
+.pitem9 .project-btn:hover{
+    box-shadow: 5px 5px 20px rgb(0, 255, 106);    
+    cursor: pointer;
+}
+.pitem2 .project-btn:hover{
+    box-shadow: 5px 5px 20px rgb(15, 64, 197);
+    cursor: pointer;
+}
+.pitem8 .project-btn:hover{
+    box-shadow: 5px 5px 20px rgb(15, 64, 197);   
+    cursor: pointer;
+}
+.pitem3 .project-btn:hover{
+    box-shadow: 5px 5px 20px rgb(221, 20, 221);
+    cursor: pointer;
+}
+.pitem7 .project-btn:hover{
+    box-shadow: 5px 5px 20px rgb(221, 20, 221);
+    cursor: pointer;
+}
+.pitem4 .project-btn:hover{
+    box-shadow: 5px 5px 20px orange;
+    cursor: pointer;
+}
+.pitem6 .project-btn:hover{
+    box-shadow: 5px 5px 20px orange;
+    cursor: pointer;
+}
+.waka-content{
+    margin-top: 50px;
+}
+.waka-content .title{
+    text-align: left;
+    text-shadow: none;
+}
+.waka-content .body{
+    text-align: left;
+}
+.waka-grid{
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(400px, auto);
+    grid-gap: 3rem;
+    grid-template-areas: "a b" "c d" "e f";
+    padding: 45 45 45 45;
+    margin-top: 120px;
+    margin-bottom: 5px;    
+}
+.rank-content{
+    margin-top: 50px;
+}
+.rank-content .title{
+    text-align: left;
+    text-shadow: none;
+}
+.rank-content .body{
+    text-align: left;
+}
+.rank-content .body .header{
+    margin: 20px;
+}
+.footer-content{
+    background-color: rgb(14, 11, 20);
+    color: white;
+    padding: 100px 0 20px 0;
+    border-top: 1px solid purple;
+}
+.footer-grid{
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(150px, auto);
+    grid-gap: 3rem;
+    grid-template-areas: "a b" "c d";
+    padding: 45 45 45 45;
+    margin-top: 120px;
+    margin-bottom: 5px;  
+}
+.fitem1{
+    grid-area: a;
+}
+.fitem2{
+    grid-area: b;
+}
+.fitem3{
+    grid-area: c;
+}
+.fitem4{
+    grid-area: d;
+}
+.fitem1, .fitem2, .fitem3, .fitem4{
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 80px;
+    text-align: center;    
+}
+.fitem1{
+    box-shadow: 5px 5px 20px rgb(221, 20, 221);
+}
+.fitem2{
+    box-shadow: 5px 5px 20px orange;
+}
+.fitem3{
+    box-shadow: 5px 5px 20px rgb(0, 255, 106);   
+}
+.fitem4{
+    box-shadow: 5px 5px 20px rgb(15, 64, 197);   
+}
+.copy{
+    text-align: center;
+    padding-top: 100px;
+}
+.footer-hr{
+    border: 2px solid white;
+    box-shadow: 5px 5px 20px rgb(0, 255, 106);   
+
+}
+/* 
+    ***************************************************************************************
+
+                             commen laptop screen and small screens
+
+                                            769px - 1400px
+
+    ***************************************************************************************
+*/
+
+@media only screen and (min-device-width: 821px) and (max-device-width: 1400px) {
+    .right-side{
+        width: 125px;
+        margin-left: 95%;
+        margin-top: -35px;
+    }
+} 
+
+/* 
+    ***************************************************************************************
+
+                                        iPads, Tablets
+
+                                        481px — 768px
+
+    ***************************************************************************************
+*/
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 820px) {
+    .right-side{
+        width: 125px;
+        margin-left: 90%;
+        margin-top: -35px;
+    }
+    .info{
+        text-align: left;
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+    .project-grid{
+        display: grid;
+        width: 100%;
+        height: auto;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(400px, auto);
+        grid-gap: 3rem;
+        grid-template-areas: "a b" "c d" "e f" "g h" "i i";
+        padding: 45 45 45 45;
+        margin-top: 120px;
+        margin-bottom: 5px;    
+    }
+    .waka-grid{
+        display: grid;
+        width: 100%;
+        height: auto;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(10px, auto);
+        grid-gap: 3rem;
+        grid-template-areas: "a b" "c d" "e f";
+        padding: 45 45 45 45;
+        margin-top: 120px;
+        margin-bottom: 5px;    
+    }
+}
+/* 
+    ***************************************************************************************
+
+                                     commen mobile screen
+
+                                            320x480
+
+    ***************************************************************************************
+*/
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .right-side{
+        width: 125px;
+        margin-left: 82%;
+        margin-top: -35px;
+    }    
+    .main-img{
+        margin-top: 50px;
+        border-radius: 20px;
+        width: 300px;
+        border: 2px solid white;
+    }
+    .info{
+        text-align: left;
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+    .grid-skills{
+        display: grid;
+        width: 100%;
+        height: auto;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: minmax(500px, auto);
+        grid-gap: 3rem;
+        grid-template-areas: "a" "b";
+        padding: 45 45 45 45;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+    .project-grid{
+        display: grid;
+        width: 100%;
+        height: auto;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: minmax(400px, auto);
+        grid-gap: 3rem;
+        grid-template-areas: "a" "b" "c" "d" "e" "f" "g" "h" "i";
+        padding: 45 45 45 45;
+        margin-top: 120px;
+        margin-bottom: 5px;    
+    }
+    .waka-grid{
+        display: grid;
+        width: 100%;
+        height: auto;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(10px, auto);
+        grid-gap: 3rem;
+        grid-template-areas: "a b" "c d" "e f";
+        padding: 45 45 45 45;
+        margin-top: 120px;
+        margin-bottom: 5px;    
+    }
+    .footer-grid{
+        display: grid;
+        width: 100%;
+        height: auto;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: minmax(150px, auto);
+        grid-gap: 3rem;
+        grid-template-areas: "a" "b" "c" "d";
+        padding: 45 45 45 45;
+        margin-top: 120px;
+        margin-bottom: 5px;  
+    }
+}
